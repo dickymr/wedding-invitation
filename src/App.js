@@ -1,26 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './assets/scss/index.scss';
 
-function App() {
+import Home from './pages/Home';
+import { data } from './data';
+
+const App = () => {
+  const lang = 'en';
+  const data_lang = data[lang];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Home data={data_lang} />
     </div>
   );
-}
+};
 
 export default App;

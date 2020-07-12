@@ -1,0 +1,39 @@
+.navbar {
+  width: 100%;
+  background: #f6e8eb;
+  border-bottom: 1px solid $tertiary;
+
+  &.sticky {
+    position: fixed;
+    top: 0px;
+    z-index: 1;
+  }
+
+  .active {
+    color: $primary;
+  }
+
+  .navbar-toggler-icon {
+    background: url(../../images/icons/navbar-toggler.svg) center no-repeat;
+    background-size: 100% 100%;
+  }
+
+  h2 {
+    font-family: Great Vibes, cursive;
+    color: $primary;
+  }
+
+  li {
+    margin-left: 50px;
+    color: $tertiary;
+    font-size: 16pt;
+
+    .nav-link {
+      cursor: pointer;
+
+      &:hover {
+        color: $primary;
+      }
+    }
+  }
+}

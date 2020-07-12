@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.app {
+  background: #f6e8eb;
+  font-family: 'Share', cursive;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+@import '~react-image-gallery/styles/scss/image-gallery.scss';
+@import './variable';
+@import './fonts';
+@import './pages/home';
+@import './parts/header';
+@import './parts/navbar';
+@import './parts/couple';
+@import './parts/events';
+@import './parts/gallery';
+@import './parts/location';
+@import './parts/box';
+@import './components/counter';
+@import './components/title';
+@import './components/bridegroom';
+@import './components/card';

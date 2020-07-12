@@ -1,0 +1,16 @@
+.boxz {
+  background-color: red;
+
+  width: 20%;
+
+  &.blue {
+    background-color: royalblue;
+  }
+
+  &.fixed {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 1;
+  }
+}
