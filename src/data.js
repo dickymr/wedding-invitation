@@ -5,20 +5,24 @@ export const data = {
         require('./assets/images/bg.jpg'),
         require('./assets/images/bg-1.jpg'),
         require('./assets/images/bg-2.jpg'),
-        require('./assets/images/bg-3.jpg'),
-        require('./assets/images/bg-4.jpg'),
       ],
       bridegroom: 'Dicky & Ira',
       desc: 'ARE GETTING MARRIED',
       date: 'SEPTEMBER 5TH, 2020',
       timestamp: 1599267600000,
+      ongoing: 'ONGOING',
       days: 'DAYS',
       hours: 'HOURS',
       minutes: 'MINUTES',
       seconds: 'SECONDS',
     },
     navbar: {
-      title: 'D & I',
+      brand: 'D & I',
+      home: 'Home',
+      couple: 'Couple',
+      events: 'Events',
+      moment: 'Moment',
+      location: 'Location',
     },
     couple: {
       title: 'Meet Happy Couple',
@@ -42,7 +46,8 @@ export const data = {
           twitter: 'https://twitter.com/mystarmyangel',
           instagram: 'https://www.instagram.com/yoona__lim/',
         },
-        description: 'The third daughter of Deddy Suryadi and Entin Wartini',
+        description:
+          'The third daughter of Deddy Rahmat Suardi and Entin Wartini',
       },
     },
     events: {
@@ -70,6 +75,74 @@ export const data = {
           line3: 'Kec. Majalaya Kab. Bandung',
         },
       },
+    },
+    moment: {
+      images: [
+        {
+          src:
+            'https://c5.staticflickr.com/9/8768/28941110956_b05ab588c1_b.jpg',
+          thumbnail:
+            'https://c5.staticflickr.com/9/8768/28941110956_b05ab588c1_n.jpg',
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+        {
+          src:
+            'https://c3.staticflickr.com/9/8583/28354353794_9f2d08d8c0_b.jpg',
+          thumbnail:
+            'https://c3.staticflickr.com/9/8583/28354353794_9f2d08d8c0_n.jpg',
+          thumbnailWidth: 320,
+          thumbnailHeight: 190,
+        },
+        {
+          src:
+            'https://c7.staticflickr.com/9/8569/28941134686_d57273d933_b.jpg',
+          thumbnail:
+            'https://c7.staticflickr.com/9/8569/28941134686_d57273d933_n.jpg',
+          thumbnailWidth: 320,
+          thumbnailHeight: 148,
+        },
+        {
+          src:
+            'https://c6.staticflickr.com/9/8342/28897193381_800db6419e_b.jpg',
+          thumbnail:
+            'https://c6.staticflickr.com/9/8342/28897193381_800db6419e_n.jpg',
+          thumbnailWidth: 320,
+          thumbnailHeight: 213,
+        },
+        {
+          src:
+            'https://c2.staticflickr.com/9/8239/28897202241_1497bec71a_b.jpg',
+          thumbnail:
+            'https://c2.staticflickr.com/9/8239/28897202241_1497bec71a_n.jpg',
+          thumbnailWidth: 248,
+          thumbnailHeight: 320,
+        },
+        {
+          src:
+            'https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg',
+          thumbnail:
+            'https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg',
+          thumbnailWidth: 320,
+          thumbnailHeight: 213,
+        },
+        {
+          src:
+            'https://c7.staticflickr.com/9/8785/28687743710_3580fcb5f0_b.jpg',
+          thumbnail:
+            'https://c7.staticflickr.com/9/8785/28687743710_3580fcb5f0_n.jpg',
+          thumbnailWidth: 320,
+          thumbnailHeight: 113,
+        },
+        {
+          src:
+            'https://c6.staticflickr.com/9/8520/28357073053_cafcb3da6f_b.jpg',
+          thumbnail:
+            'https://c6.staticflickr.com/9/8520/28357073053_cafcb3da6f_n.jpg',
+          thumbnailWidth: 313,
+          thumbnailHeight: 320,
+        },
+      ],
     },
   },
 };

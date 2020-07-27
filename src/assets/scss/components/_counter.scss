@@ -1,9 +1,12 @@
 .counter {
+  width: 90%;
+  margin: 0 auto;
+
   .box {
-    width: 100px;
+    width: 90px;
     height: 110px;
     color: #2d2d2d;
-    background-color: rgba(254, 254, 254, 0.5);
+    background-color: #fefefe80;
 
     .times {
       font-family: Stint Ultra Condensed, cursive;

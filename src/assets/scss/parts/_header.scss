@@ -1,26 +1,52 @@
 header {
   .container-fluid {
     height: 100vh;
-    background: url('../../images/bg-1.jpg') center no-repeat;
-    background-size: cover;
-    color: #fefefe;
+    padding: 0;
 
-    .h1 {
+    .background {
+      width: 100vw;
+      height: 100vh;
+
+      img {
+        width: 100%;
+
+        @media only screen and (max-width: $mobile) {
+          height: 100%;
+          object-fit: cover;
+          object-position: 70%;
+        }
+      }
+    }
+  }
+
+  .content {
+    height: 100vh;
+    color: $white;
+    position: absolute;
+    top: 0;
+
+    .bridegroom {
       font-family: Great Vibes, cursive;
       font-size: 6rem;
-      -webkit-text-stroke: 2px #fefefe;
+      -webkit-text-stroke: 2px $white;
     }
 
-    .h4 {
+    .desc {
+      font-size: 1.5rem;
       letter-spacing: 0.25vw;
     }
 
-    @media only screen and (max-width: 576px) {
-      .h1 {
+    .date {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $mobile) {
+      .bridegroom {
         font-size: 4rem;
       }
 
-      .h4 {
+      .desc,
+      .date {
         font-size: 1.25rem;
       }
     }

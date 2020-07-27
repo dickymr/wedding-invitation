@@ -19,7 +19,7 @@ const Bridgroom = ({ data }) => {
   return (
     <div className="bridegroom col-md-6 d-flex flex-column justify-content-center align-items-center mb-5">
       <div className="profil">
-        <img src={data.photo} alt="bride" />
+        <img src={data.photo} alt="foto" />
       </div>
       <div className="h2 mt-3">{data.name}</div>
       <div className="status d-flex justify-content-center align-items-center mb-1">

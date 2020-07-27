@@ -4,7 +4,7 @@ import Header from '../parts/Header';
 import Navbar from '../parts/Navbar';
 import Couple from '../parts/Couple';
 import Events from '../parts/Events';
-import Gallery from '../parts/Gallery';
+import Moment from '../parts/Moment';
 import Location from '../parts/Location';
 
 const Home = ({ data }) => {
@@ -14,7 +14,7 @@ const Home = ({ data }) => {
       <Navbar data={data.navbar} />
       <Couple data={data.couple} />
       <Events data={data.events} />
-      <Gallery data={data.gallery} />
+      <Moment data={data.moment} />
       <Location data={data.location} />
     </div>
   );

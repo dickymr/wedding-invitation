@@ -1,5 +1,4 @@
 import React from 'react';
-import './assets/scss/index.scss';
 
 import Home from './pages/Home';
 import { data } from './data';

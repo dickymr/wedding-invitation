@@ -1,10 +1,10 @@
 import React from 'react';
 import Countdown, { zeroPad } from 'react-countdown';
 
-const Counter = () => {
+const Counter = ({ data }) => {
   const renderer = ({ days, hours, minutes, seconds, completed }) => {
     if (completed) {
-      return <div className="h2">ONGOING</div>;
+      return <div className="h2">{data.ongoing}</div>;
     } else {
       return (
         <>
@@ -29,7 +29,7 @@ const Counter = () => {
   return (
     <div className="counter d-flex justify-content-around align-items-center">
       <Countdown
-        date={1599267600000}
+        date={data.timestamp}
         daysInHours={true}
         renderer={renderer}
         zeroPadTime={2}
