@@ -1,9 +1,11 @@
 import React from 'react';
-
+import useScrollPosition from '@react-hook/window-scroll';
 import { Link } from 'react-scroll';
 
 const Navbar = ({ data }) => {
-  return (
+  const scrollY = useScrollPosition(60);
+
+  return scrollY > 600 ? (
     <nav className="navbar navbar-expand-sm">
       <div className="container-fluid">
         <button
@@ -78,6 +80,8 @@ const Navbar = ({ data }) => {
         </div>
       </div>
     </nav>
+  ) : (
+    <div></div>
   );
 };
 

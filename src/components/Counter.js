@@ -18,10 +18,14 @@ const Counter = ({ data }) => {
   };
 
   const Square = (time, text) => {
+    const plurality = (text) => {
+      return time > 1 ? text : text.slice(0, -1);
+    };
+
     return (
       <div className="box d-flex flex-column justify-content-center align-items-center">
         <div className="times">{time}</div>
-        <div className="text">{text}</div>
+        <div className="text">{plurality(text)}</div>
       </div>
     );
   };

@@ -10,14 +10,21 @@ const Bridgroom = ({ data }) => {
 
   const renderSocmed = (type) => {
     return (
-      <div className={type} onClick={() => handleSocmed(type)}>
+      <div
+        className={type}
+        data-aos="zoom-in-up"
+        data-aos-duration="1500"
+        onClick={() => handleSocmed(type)}>
         .
       </div>
     );
   };
 
   return (
-    <div className="bridegroom col-md-6 d-flex flex-column justify-content-center align-items-center mb-5">
+    <div
+      className="bridegroom col-md-6 d-flex flex-column justify-content-center align-items-center mb-5"
+      data-aos={data.status === 'GROOM' ? 'fade-right' : 'fade-left'}
+      data-aos-duration="1500">
       <div className="profil">
         <img src={data.photo} alt="foto" />
       </div>

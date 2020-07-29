@@ -30,10 +30,13 @@ const Header = ({ data }) => {
   };
   const renderContent = () => {
     return (
-      <div className="content container-fluid d-flex flex-column justify-content-center align-items-center">
+      <div
+        className="content container-fluid d-flex flex-column justify-content-center align-items-center"
+        data-aos="zoom-in-up"
+        data-aos-duration="1500">
         <div className="row">
           <div className="col text-center">
-            <div className="bridegroom mb-3">{data.bridegroom}</div>
+            <div className="name mb-3">{data.bridegroom}</div>
             <div className="desc">{data.desc}</div>
             <div className="separator">
               <img src={separator} alt="separator" />
@@ -50,6 +53,7 @@ const Header = ({ data }) => {
     <header id="header">
       {renderBackground()}
       {renderContent()}
+      <div className="overlay"></div>
     </header>
   );
 };

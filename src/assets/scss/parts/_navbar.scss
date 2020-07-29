@@ -2,9 +2,11 @@
   width: 100%;
   background: #f6e8eb;
   border-bottom: 1px solid $tertiary;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 5;
+  animation: fadeIn;
+  animation-duration: 1s;
 
   .navbar-brand {
     cursor: pointer;

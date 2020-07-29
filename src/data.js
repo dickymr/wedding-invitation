@@ -144,5 +144,9 @@ export const data = {
         },
       ],
     },
+    location: {
+      maps:
+        'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349.96908978547026!2d107.73943603648561!3d-7.073913208208633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e68c15fe08bdc0f%3A0x8d86ab2ef152e2da!2sGor%20Sabilulungan!5e0!3m2!1sid!2sid!4v1595907723515!5m2!1sid!2sid',
+    },
   },
 };

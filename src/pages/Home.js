@@ -10,8 +10,8 @@ import Location from '../parts/Location';
 const Home = ({ data }) => {
   return (
     <div className="home">
-      <Header data={data.header} />
       <Navbar data={data.navbar} />
+      <Header data={data.header} />
       <Couple data={data.couple} />
       <Events data={data.events} />
       <Moment data={data.moment} />
