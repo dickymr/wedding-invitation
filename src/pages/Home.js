@@ -6,6 +6,7 @@ import Couple from '../parts/Couple';
 import Events from '../parts/Events';
 import Moment from '../parts/Moment';
 import Location from '../parts/Location';
+import Footer from '../parts/Footer';
 
 const Home = ({ data }) => {
   return (
@@ -16,6 +17,7 @@ const Home = ({ data }) => {
       <Events data={data.events} />
       <Moment data={data.moment} />
       <Location data={data.location} />
+      <Footer data={data.footer} />
     </div>
   );
 };
