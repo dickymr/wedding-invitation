@@ -16,7 +16,7 @@ const App = () => {
   useEffect(() => {
     setTimeout(() => {
       setLoader(false);
-    }, 0);
+    }, 2000);
 
     AOS.init({ delay: 250 });
     AOS.refresh();
