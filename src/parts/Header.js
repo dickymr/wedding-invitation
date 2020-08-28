@@ -64,7 +64,6 @@ const Header = ({ data }) => {
   };
 
   const scrollY = useScrollPosition(60);
-  console.log(scrollY);
 
   return (
     <header id="header">
