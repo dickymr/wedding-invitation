@@ -16,10 +16,15 @@ const Header = ({ data }) => {
       arrows: false,
     };
 
+    const isPortrait = window.innerHeight > window.innerWidth;
+    const backgrounds = isPortrait
+      ? data.bgImagePortrait
+      : data.bgImageLandscape;
+
     return (
       <div className="container-fluid">
         <Slider {...settings}>
-          {data.bgImage.map((ele, i) => (
+          {backgrounds.map((ele, i) => (
             <div key={i} className="background">
               <img src={ele} alt={`bg-${i}`} />
             </div>

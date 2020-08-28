@@ -1,10 +1,15 @@
 export const data = {
   en: {
     header: {
-      bgImage: [
-        require('./assets/images/bg.jpg'),
+      bgImageLandscape: [
         require('./assets/images/bg-1.jpg'),
         require('./assets/images/bg-2.jpg'),
+        require('./assets/images/bg-3.jpg'),
+      ],
+      bgImagePortrait: [
+        require('./assets/images/bg-4.jpg'),
+        require('./assets/images/bg-5.jpg'),
+        require('./assets/images/bg-6.jpg'),
       ],
       bridegroom: 'Dicky & Ira',
       desc: 'ARE GETTING MARRIED',
@@ -28,26 +33,26 @@ export const data = {
       title: 'Meet Happy Couple',
       groom: {
         name: 'DICKY MUHAMAD RIZKY',
-        photo: require('./assets/images/couple/groom.jpeg'),
+        photo: require('./assets/images/couple/1.jpg'),
         status: 'GROOM',
         socmed: {
-          facebook: 'https://www.facebook.com/MarcoReus11',
-          twitter: 'https://twitter.com/woodyinho',
-          instagram: 'https://www.instagram.com/marcinho11/',
+          facebook: '',
+          twitter: '',
+          instagram: 'https://www.instagram.com/dickymr_/',
         },
         description: 'The first son of Aan Kandarjaya and Maria Antoniqeu',
       },
       bride: {
         name: 'IRA SRI QODARWATI',
-        photo: require('./assets/images/couple/bride.jpeg'),
+        photo: require('./assets/images/couple/2.jpg'),
         status: 'BRIDE',
         socmed: {
-          facebook: 'https://www.facebook.com/limyoonacom/',
-          twitter: 'https://twitter.com/mystarmyangel',
-          instagram: 'https://www.instagram.com/yoona__lim/',
+          facebook: '',
+          twitter: '',
+          instagram: 'https://www.instagram.com/irasq_/',
         },
         description:
-          'The third daughter of Deddy Rahmat Suardi and Entin Wartini',
+          'The third daughter of Dedi Rahmat Suardi and Entin Wartini',
       },
     },
     events: {
@@ -58,9 +63,9 @@ export const data = {
         date: 'Saturday, July 18th 2020',
         time: '02.00 PM - 05.00 PM',
         address: {
-          line1: 'Burj Khalifa Tower',
-          line2: 'Jl. Wangisagara No. 86',
-          line3: 'Kec. Majalaya Kab. Bandung',
+          line1: 'Kp. Nagla Ds. Sukapura',
+          line2: 'Kec. Kertasari Kab. Bandung',
+          line3: '',
         },
       },
       reception: {
@@ -68,10 +73,10 @@ export const data = {
         foto: require('./assets/images/events/reception.png'),
         title: 'THE RECEPTION',
         date: 'Saturday, September 5th 2020',
-        time: '10.30 AM - 03.00 PM',
+        time: '10.00 AM - 04.00 PM',
         address: {
-          line1: 'Burj Khalifa Tower',
-          line2: 'Jl. Wangisagara No. 86',
+          line1: 'Kampung Budaya',
+          line2: 'Jl. Pasir Garut RT. 01 RW. 08 Ds. Wangisagara',
           line3: 'Kec. Majalaya Kab. Bandung',
         },
       },
@@ -79,68 +84,100 @@ export const data = {
     moment: {
       images: [
         {
-          src:
-            'https://c5.staticflickr.com/9/8768/28941110956_b05ab588c1_b.jpg',
-          thumbnail:
-            'https://c5.staticflickr.com/9/8768/28941110956_b05ab588c1_n.jpg',
+          src: require('./assets/images/moment/1.jpg'),
+          thumbnail: require('./assets/images/moment/1.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 200,
+        },
+        {
+          src: require('./assets/images/moment/2.jpg'),
+          thumbnail: require('./assets/images/moment/2.jpg'),
           thumbnailWidth: 240,
           thumbnailHeight: 320,
         },
         {
-          src:
-            'https://c3.staticflickr.com/9/8583/28354353794_9f2d08d8c0_b.jpg',
-          thumbnail:
-            'https://c3.staticflickr.com/9/8583/28354353794_9f2d08d8c0_n.jpg',
+          src: require('./assets/images/moment/3.jpg'),
+          thumbnail: require('./assets/images/moment/3.jpg'),
           thumbnailWidth: 320,
-          thumbnailHeight: 190,
+          thumbnailHeight: 200,
         },
         {
-          src:
-            'https://c7.staticflickr.com/9/8569/28941134686_d57273d933_b.jpg',
-          thumbnail:
-            'https://c7.staticflickr.com/9/8569/28941134686_d57273d933_n.jpg',
-          thumbnailWidth: 320,
-          thumbnailHeight: 148,
-        },
-        {
-          src:
-            'https://c6.staticflickr.com/9/8342/28897193381_800db6419e_b.jpg',
-          thumbnail:
-            'https://c6.staticflickr.com/9/8342/28897193381_800db6419e_n.jpg',
-          thumbnailWidth: 320,
-          thumbnailHeight: 213,
-        },
-        {
-          src:
-            'https://c2.staticflickr.com/9/8239/28897202241_1497bec71a_b.jpg',
-          thumbnail:
-            'https://c2.staticflickr.com/9/8239/28897202241_1497bec71a_n.jpg',
-          thumbnailWidth: 248,
+          src: require('./assets/images/moment/4.jpg'),
+          thumbnail: require('./assets/images/moment/4.jpg'),
+          thumbnailWidth: 240,
           thumbnailHeight: 320,
         },
         {
-          src:
-            'https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_b.jpg',
-          thumbnail:
-            'https://c8.staticflickr.com/9/8104/28973555735_ae7c208970_n.jpg',
+          src: require('./assets/images/moment/5.jpg'),
+          thumbnail: require('./assets/images/moment/5.jpg'),
           thumbnailWidth: 320,
-          thumbnailHeight: 213,
+          thumbnailHeight: 200,
         },
         {
-          src:
-            'https://c7.staticflickr.com/9/8785/28687743710_3580fcb5f0_b.jpg',
-          thumbnail:
-            'https://c7.staticflickr.com/9/8785/28687743710_3580fcb5f0_n.jpg',
-          thumbnailWidth: 320,
-          thumbnailHeight: 113,
-        },
-        {
-          src:
-            'https://c6.staticflickr.com/9/8520/28357073053_cafcb3da6f_b.jpg',
-          thumbnail:
-            'https://c6.staticflickr.com/9/8520/28357073053_cafcb3da6f_n.jpg',
-          thumbnailWidth: 313,
+          src: require('./assets/images/moment/6.jpg'),
+          thumbnail: require('./assets/images/moment/6.jpg'),
+          thumbnailWidth: 240,
           thumbnailHeight: 320,
+        },
+        {
+          src: require('./assets/images/moment/7.jpg'),
+          thumbnail: require('./assets/images/moment/7.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 200,
+        },
+        {
+          src: require('./assets/images/moment/8.jpg'),
+          thumbnail: require('./assets/images/moment/8.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 200,
+        },
+        {
+          src: require('./assets/images/moment/9.jpg'),
+          thumbnail: require('./assets/images/moment/9.jpg'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+        {
+          src: require('./assets/images/moment/10.jpg'),
+          thumbnail: require('./assets/images/moment/10.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 200,
+        },
+        {
+          src: require('./assets/images/moment/11.jpg'),
+          thumbnail: require('./assets/images/moment/11.jpg'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+        {
+          src: require('./assets/images/moment/12.jpg'),
+          thumbnail: require('./assets/images/moment/12.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 200,
+        },
+        {
+          src: require('./assets/images/moment/13.jpg'),
+          thumbnail: require('./assets/images/moment/13.jpg'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+        {
+          src: require('./assets/images/moment/14.jpg'),
+          thumbnail: require('./assets/images/moment/14.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 240,
+        },
+        {
+          src: require('./assets/images/moment/15.jpg'),
+          thumbnail: require('./assets/images/moment/15.jpg'),
+          thumbnailWidth: 240,
+          thumbnailHeight: 320,
+        },
+        {
+          src: require('./assets/images/moment/16.jpg'),
+          thumbnail: require('./assets/images/moment/16.jpg'),
+          thumbnailWidth: 320,
+          thumbnailHeight: 240,
         },
       ],
     },
