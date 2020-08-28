@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import useScrollPosition from '@react-hook/window-scroll';
 
 import Counter from '../components/Counter';
 
@@ -50,9 +51,20 @@ const Header = ({ data }) => {
             <Counter data={data} />
           </div>
         </div>
+        {scrollY < 200 && (
+          <div className="animated infinite bounce slow arrow">
+            <img
+              src={require('../assets/images/icons/arrow.png')}
+              alt="arrow"
+            />
+          </div>
+        )}
       </div>
     );
   };
+
+  const scrollY = useScrollPosition(60);
+  console.log(scrollY);
 
   return (
     <header id="header">

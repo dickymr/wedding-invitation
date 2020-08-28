@@ -42,6 +42,10 @@ header {
       font-size: 1.5rem;
     }
 
+    .arrow {
+      display: none;
+    }
+
     @media only screen and (max-width: $mobile) {
       .name {
         font-size: 4rem;
@@ -50,6 +54,17 @@ header {
       .desc,
       .date {
         font-size: 1.25rem;
+      }
+
+      .arrow {
+        width: 5%;
+        display: block;
+        position: absolute;
+        bottom: 15%;
+
+        img {
+          width: 100%;
+        }
       }
     }
   }
