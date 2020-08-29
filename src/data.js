@@ -23,11 +23,13 @@ export const data = {
     },
     navbar: {
       brand: 'D & I',
-      home: 'Home',
-      couple: 'Couple',
-      events: 'Events',
-      moment: 'Moment',
-      location: 'Location',
+      nav: [
+        { to: 'header', text: 'Home' },
+        { to: 'couple', text: 'Couple' },
+        { to: 'events', text: 'Events' },
+        { to: 'moment', text: 'Moment' },
+        { to: 'location', text: 'Location' },
+      ],
     },
     couple: {
       title: 'Meet Happy Couple',
