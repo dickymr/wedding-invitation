@@ -12,7 +12,7 @@ const Header = ({ data }) => {
       fade: true,
       speed: 2000,
       autoplay: true,
-      autoplaySpeed: 7500,
+      autoplaySpeed: 5000,
       infinite: true,
       arrows: false,
     };
