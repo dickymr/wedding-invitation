@@ -52,7 +52,7 @@ const Header = ({ data, firstLoad, setFirstLoad, bgm }) => {
             {firstLoad ? (
               <div className="card d-flex flex-column justify-content-center align-items-center px-5 py-4">
                 <div className="to">{data.line1}</div>
-                <h1 className="receiver">{receiver.replace(/%20/g, ' ')}</h1>
+                <h1 className="receiver">{receiver && receiver.replace(/%20/g, ' ')}</h1>
                 <div className="to">{data.line2}</div>
                 <div
                   className="btn btn-secondary btn-lg mt-3"
