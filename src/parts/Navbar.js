@@ -8,10 +8,7 @@ const Navbar = ({ data }) => {
   return scrollY > 600 ? (
     <nav className="navbar navbar-expand-sm">
       <div className="container-fluid">
-        <button
-          className="navbar-toggler"
-          data-toggle="collapse"
-          data-target="#Navbar">
+        <button className="navbar-toggler" data-toggle="collapse" data-target="#Navbar">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="navbar-brand pt-3 ml-5">
@@ -23,13 +20,7 @@ const Navbar = ({ data }) => {
           <ul className="navbar-nav ml-auto">
             {data.nav.map((ele, i) => (
               <li key={i} className="nav-item">
-                <Link
-                  activeClass="active"
-                  to={ele.to}
-                  spy={true}
-                  smooth={true}
-                  offset={0}
-                  duration={500}>
+                <Link activeClass="active" to={ele.to} spy={true} smooth={true} offset={0} duration={500}>
                   <div className="nav-link">{ele.text}</div>
                 </Link>
               </li>
