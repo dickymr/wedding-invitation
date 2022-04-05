@@ -3,10 +3,11 @@ import Slider from 'react-slick';
 import useScrollPosition from '@react-hook/window-scroll';
 
 import Counter from '../components/Counter';
+import { audio, getUrlParam } from '../utils/helper';
 
 const separator = require('../assets/images/icons/separator.svg');
 
-const Header = ({ data }) => {
+const Header = ({ data, firstLoad, setFirstLoad, bgm }) => {
   const renderBackground = () => {
     const settings = {
       fade: true,
@@ -18,15 +19,14 @@ const Header = ({ data }) => {
     };
 
     const isPortrait = window.innerHeight > window.innerWidth;
-    const backgrounds = isPortrait
-      ? data.bgImagePortrait
-      : data.bgImageLandscape;
+    const backgrounds = isPortrait ? data.bgImagePortrait : data.bgImageLandscape;
 
     return (
       <div className="container-fluid">
         <Slider {...settings}>
           {backgrounds.map((ele, i) => (
             <div key={i} className="background">
+              {firstLoad && <div className="dark"></div>}
               <img src={ele} alt={`bg-${i}`} />
             </div>
           ))}
@@ -34,6 +34,7 @@ const Header = ({ data }) => {
       </div>
     );
   };
+
   const renderContent = () => {
     return (
       <div
@@ -48,15 +49,28 @@ const Header = ({ data }) => {
               <img src={separator} alt="separator" />
             </div>
             <div className="date h4 mb-5">{data.date}</div>
-            <Counter data={data} />
+            {firstLoad ? (
+              <div className="card d-flex flex-column justify-content-center align-items-center px-5 py-4">
+                <div className="to">{data.line1}</div>
+                <h1 className="receiver">{receiver.replace(/%20/g, ' ')}</h1>
+                <div className="to">{data.line2}</div>
+                <div
+                  className="btn btn-secondary btn-lg mt-3"
+                  onClick={() => {
+                    audio(bgm).play();
+                    setFirstLoad(false);
+                  }}>
+                  {data.button}
+                </div>
+              </div>
+            ) : (
+              <Counter data={data} />
+            )}
           </div>
         </div>
-        {scrollY < 200 && (
+        {!firstLoad && scrollY < 200 && (
           <div className="animated infinite bounce slow arrow">
-            <img
-              src={require('../assets/images/icons/arrow.png')}
-              alt="arrow"
-            />
+            <img src={require('../assets/images/icons/arrow.png')} alt="arrow" />
           </div>
         )}
       </div>
@@ -64,6 +78,7 @@ const Header = ({ data }) => {
   };
 
   const scrollY = useScrollPosition(60);
+  const receiver = getUrlParam('to');
 
   return (
     <header id="header">
