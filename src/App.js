@@ -22,9 +22,7 @@ const App = () => {
     AOS.refresh();
   });
 
-  return (
-    <div className="app">{loader ? <Loader /> : <Home data={data_lang} />}</div>
-  );
+  return <div className="app">{loader ? <Loader /> : <Home data={data_lang} />}</div>;
 };
 
 export default App;
