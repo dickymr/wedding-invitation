@@ -57,7 +57,7 @@ const Header = ({ data, firstLoad, setFirstLoad, bgm }) => {
                 <div
                   className="btn btn-secondary btn-lg mt-3"
                   onClick={() => {
-                    audio(bgm).play();
+                    audio(bgm, { loop: true }).play();
                     setFirstLoad(false);
                   }}>
                   {data.button}
