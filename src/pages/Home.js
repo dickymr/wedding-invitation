@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Snowfall from 'react-snowfall';
 import { Howler } from 'howler';
 
 import Header from '../parts/Header';
@@ -35,6 +36,14 @@ const Home = ({ data }) => {
           <Moment data={data.moment} />
           <Location data={data.location} />
           <Footer data={data.footer} />
+          <Snowfall
+            color="#d19ba763"
+            snowflakeCount={25}
+            speed={[0, 0.5]}
+            wind={[0, 0.5]}
+            radius={[0, 5]}
+            style={{ position: 'fixed', width: '100vw', height: '100vh' }}
+          />
         </>
       )}
     </div>
