@@ -21,6 +21,7 @@ const Form = ({ fetchMessages }) => {
 
     if (resp.status === 200) {
       fetchMessages();
+      reset();
     } else {
       console.log(resp);
     }
@@ -28,7 +29,7 @@ const Form = ({ fetchMessages }) => {
     setLoader(false);
   };
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, reset } = useForm();
 
   return (
     <div className="form row d-flex justify-content-center align-items-center px-3 mt-3">

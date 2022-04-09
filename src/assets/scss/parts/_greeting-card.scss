@@ -31,7 +31,7 @@
   .msg-box {
     &-wrapper {
       height: 40vh;
-      overflow-y: scroll;
+      overflow-y: auto;
     }
 
     .avatar {
