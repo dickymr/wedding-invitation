@@ -9,17 +9,14 @@ import Events from '../parts/Events';
 import Moment from '../parts/Moment';
 import Location from '../parts/Location';
 import Footer from '../parts/Footer';
+import GreetingCard from '../parts/GreetingCard';
 
 const Home = ({ data }) => {
   const [firstLoad, setFirstLoad] = useState(true);
 
   useEffect(() => {
     document.addEventListener('visibilitychange', () => {
-      if (document.visibilityState === 'visible') {
-        Howler.mute(false);
-      } else {
-        Howler.mute(true);
-      }
+      Howler.mute(document.visibilityState === 'visible' ? false : false);
     });
 
     // eslint-disable-next-line
@@ -35,6 +32,7 @@ const Home = ({ data }) => {
           <Events data={data.events} />
           <Moment data={data.moment} />
           <Location data={data.location} />
+          <GreetingCard data={data.events} />
           <Footer data={data.footer} />
           <Snowfall
             color="#d19ba763"
