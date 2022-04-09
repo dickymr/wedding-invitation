@@ -1,9 +1,19 @@
 import React from 'react';
 
-const Footer = ({ data }) => {
+const Footer = () => {
   return (
     <footer className="mt-5">
-      <p>{data.text}</p>
+      <p>
+        Made with{' '}
+        <span role="img" aria-label="">
+          💕
+        </span>{' '}
+        |{' '}
+        <a href="https://dickymr.xyz/" target="_blank" rel="noreferrer noopener">
+          Dicky Muhamad R
+        </a>
+        .
+      </p>
     </footer>
   );
 };

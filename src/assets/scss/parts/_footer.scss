@@ -10,5 +10,10 @@ footer {
     font-size: 14px;
     color: $fourthiary;
     margin: 0;
+
+    a {
+      color: $secondary;
+      text-decoration: underline;
+    }
   }
 }
