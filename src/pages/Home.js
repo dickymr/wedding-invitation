@@ -16,7 +16,7 @@ const Home = ({ data }) => {
 
   useEffect(() => {
     document.addEventListener('visibilitychange', () => {
-      Howler.mute(document.visibilityState === 'visible' ? false : false);
+      Howler.mute(document.visibilityState === 'visible' ? false : true);
     });
 
     // eslint-disable-next-line
