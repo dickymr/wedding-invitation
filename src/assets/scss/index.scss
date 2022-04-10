@@ -1,16 +1,3 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.app {
-  background: #f6e8eb;
-  font-family: 'Share', cursive;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
-}
-
 @import './variable';
 @import './fonts';
 @import './pages/home';
@@ -27,3 +14,35 @@
 @import './components/title';
 @import './components/bridegroom';
 @import './components/card';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  background: #f6e8eb;
+  font-family: 'Share', cursive;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.5vw;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #ffdcdc;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffb9c5;
+}
+
+// /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  filter: grayscale(10);
+}
