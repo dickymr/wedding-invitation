@@ -2,24 +2,25 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
 import { addGA } from '../utils/helper';
+import { data } from '../data';
 
 const Form = ({ fetchMessages }) => {
   const [loader, setLoader] = useState(false);
 
-  const onSubmit = async (data) => {
+  const onSubmit = async (e) => {
     setLoader(true);
     addGA('post-message', 'click');
 
     const payload = {
       data: {
-        event: 'dicky-ira',
-        name: data.name,
-        message: data.message,
-        // attend: data.attend,
+        event: data['en'].config.name,
+        name: e.name,
+        message: e.message,
+        // attend: e.attend,
       },
     };
 
-    const resp = await axios.post('http://localhost:1337/api/messages', payload);
+    const resp = await axios.post(process.env.REACT_APP_API_ENDPOINT + '/api/messages', payload);
 
     if (resp.status === 200) {
       fetchMessages();
