@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
+import { addGA } from '../utils/helper';
 
 const Form = ({ fetchMessages }) => {
   const [loader, setLoader] = useState(false);
 
   const onSubmit = async (data) => {
     setLoader(true);
+    addGA('post-message', 'click');
 
     const payload = {
       data: {
@@ -21,8 +23,10 @@ const Form = ({ fetchMessages }) => {
 
     if (resp.status === 200) {
       fetchMessages();
+      addGA('post-message-success', 'show');
       reset();
     } else {
+      addGA('post-message-failed', 'show');
       console.log(resp);
     }
 

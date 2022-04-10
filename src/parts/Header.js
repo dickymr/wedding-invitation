@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import useScrollPosition from '@react-hook/window-scroll';
 
 import Counter from '../components/Counter';
-import { audio, getUrlParam } from '../utils/helper';
+import { addGA, audio, getUrlParam } from '../utils/helper';
 
 const separator = require('../assets/images/icons/separator.svg');
 
@@ -58,6 +58,7 @@ const Header = ({ data, firstLoad, setFirstLoad, bgm }) => {
                   className="btn btn-secondary btn-lg mt-3"
                   onClick={() => {
                     audio(bgm, { loop: true, volume: 0.25 }).play();
+                    addGA('open-invitation', 'click');
                     setFirstLoad(false);
                   }}>
                   {data.button}

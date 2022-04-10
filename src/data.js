@@ -1,6 +1,7 @@
 export const data = {
   en: {
     config: {
+      name: 'dicky-ira',
       bgm: 'https://cdngarenanow-a.akamaihd.net/gstaticid/BMG/wildwet/sounds/love-song.mp3',
     },
     header: {
