@@ -42,11 +42,19 @@ const Form = ({ fetchMessages }) => {
         <form className="w-100 d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group mb-3">
             <label>Name</label>
-            <input className="form-control" {...register('name', { required: true, maxLength: 100 })} />
+            <input
+              className="form-control"
+              {...register('name', { required: true, maxLength: 100 })}
+              placeholder="Type your name here"
+            />
           </div>
           <div className="form-group mb-3">
             <label>Message</label>
-            <textarea className="form-control" {...register('message', { required: true, maxLength: 500 })} />
+            <textarea
+              className="form-control"
+              {...register('message', { required: true, maxLength: 500 })}
+              placeholder="Type your message here"
+            />
           </div>
           {/* <label>Kehadiran</label>
           <div className="form-group">
