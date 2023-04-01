@@ -2,23 +2,15 @@ export const data = {
   en: {
     config: {
       name: 'dicky-ira',
-      bgm: 'https://cdngarenanow-a.akamaihd.net/gstaticid/BMG/wildwet/sounds/love-song.mp3',
+      bgm: 'https://cdngarenanow-a.akamaihd.net/gstaticid/BMG/wildwet/sounds/love-song-3.mp3',
     },
     header: {
-      bgImageLandscape: [
-        require('./assets/images/bg-1.jpg'),
-        require('./assets/images/bg-2.jpg'),
-        require('./assets/images/bg-3.jpg'),
-      ],
-      bgImagePortrait: [
-        require('./assets/images/bg-4.jpg'),
-        require('./assets/images/bg-5.jpg'),
-        require('./assets/images/bg-6.jpg'),
-      ],
+      bgImageLandscape: [require('./assets/images/bg-1.jpg'), require('./assets/images/bg-2.jpg'), require('./assets/images/bg-3.jpg')],
+      bgImagePortrait: [require('./assets/images/bg-4.jpg'), require('./assets/images/bg-5.jpg'), require('./assets/images/bg-6.jpg')],
       bridegroom: 'Dicky & Ira',
       desc: 'ARE GETTING MARRIED',
-      date: 'APRIL 30TH, 2022',
-      timestamp: 1651331272000,
+      date: 'DECEMBER 31TH, 2023',
+      timestamp: 1703989800000,
       ongoing: 'ONGOING',
       days: 'DAYS',
       hours: 'HOURS',
@@ -73,7 +65,7 @@ export const data = {
         address: {
           line1: 'Kp. Nagla Ds. Sukapura',
           line2: 'Kec. Kertasari Kab. Bandung',
-          line3: '',
+          line3: '-',
         },
       },
       reception: {
