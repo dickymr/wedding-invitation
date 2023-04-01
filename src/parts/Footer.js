@@ -9,7 +9,7 @@ const Footer = () => {
           💕
         </span>{' '}
         |{' '}
-        <a href="https://dickymr.xyz/" target="_blank" rel="noreferrer noopener">
+        <a href="https://dickymr.com/" target="_blank" rel="noreferrer noopener">
           Dicky Muhamad R
         </a>
         .
