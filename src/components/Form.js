@@ -20,7 +20,7 @@ const Form = ({ fetchMessages }) => {
       },
     };
 
-    const resp = await axios.post(process.env.REACT_APP_API_ENDPOINT + '/api/messages', payload);
+    const resp = await axios.post(process.env.REACT_APP_API_ENDPOINT + '/api/wedding-messages', payload);
 
     if (resp.status === 200) {
       fetchMessages();
@@ -42,19 +42,11 @@ const Form = ({ fetchMessages }) => {
         <form className="w-100 d-flex flex-column" onSubmit={handleSubmit(onSubmit)}>
           <div className="form-group mb-3">
             <label>Name</label>
-            <input
-              className="form-control"
-              {...register('name', { required: true, maxLength: 100 })}
-              placeholder="Type your name here"
-            />
+            <input className="form-control" {...register('name', { required: true, maxLength: 100 })} placeholder="Type your name here" />
           </div>
           <div className="form-group mb-3">
             <label>Message</label>
-            <textarea
-              className="form-control"
-              {...register('message', { required: true, maxLength: 500 })}
-              placeholder="Type your message here"
-            />
+            <textarea className="form-control" {...register('message', { required: true, maxLength: 500 })} placeholder="Type your message here" />
           </div>
           {/* <label>Kehadiran</label>
           <div className="form-group">
